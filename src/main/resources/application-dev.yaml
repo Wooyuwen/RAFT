@@ -1,0 +1,35 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+logging:
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS,CTT}){faint} %clr(%5p) - %clr([%t]){faint} %X{log_id} %clr(%logger{39}){cyan} %clr(:){faint} %m%n%wEx"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS,CTT} %5p - [%t] %X{log_id} %logger{39} : %m%n%wEx"
+  level:
+    root: info
+  file:
+    path: log
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.238.131:3306/raft?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: 123456
+  redis:
+    host: 192.168.238.131
+    port: 6379
+    max-wait: 30000
+    max-active: 100
+    max-idle: 20
+    min-idle: 0
+    timeout: 3000
+    password: 123456
+    database: 0
+
+mybatis:
+  type-aliases-package: com.wyw.springboot.entity
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/*Mapper.xml
