@@ -58,3 +58,21 @@ Action:
 
 Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
 
+2021-11-04 14:46:22.604  INFO - [main]  c.wyw.springboot.SpringbootApplication : Starting SpringbootApplication using Java 16 on DESKTOP-DJEADIN with PID 12004 (D:\githubcode\springboot\target\classes started by wywfd in D:\githubcode\springboot)
+2021-11-04 14:46:22.609  INFO - [main]  c.wyw.springboot.SpringbootApplication : The following profiles are active: dev
+2021-11-04 14:46:23.687  INFO - [main]  o.s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-04 14:46:23.691  INFO - [main]  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-04 14:46:23.716  INFO - [main]  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-11-04 14:46:24.066  INFO - [main]  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.wyw.springboot.config.RedisConfig$$EnhancerBySpringCGLIB$$d75e4956] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-04 14:46:24.473  INFO - [main]  o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+2021-11-04 14:46:24.486  INFO - [main]  o.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-11-04 14:46:24.486  INFO - [main]  org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-11-04 14:46:24.598  INFO - [main]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-11-04 14:46:24.599  INFO - [main]  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1884 ms
+2021-11-04 14:46:26.012  INFO - [main]  o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-04 14:46:26.030  INFO - [main]  c.wyw.springboot.SpringbootApplication : Started SpringbootApplication in 4.166 seconds (JVM running for 6.677)
+2021-11-04 14:46:36.982  INFO - [http-nio-8080-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-04 14:46:36.982  INFO - [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-11-04 14:46:36.984  INFO - [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+2021-11-04 14:46:41.720  INFO - [http-nio-8080-exec-2]  c.w.s.s.serviceInterface.UserService : redis set kv success
+2021-11-04 14:48:03.750  INFO - [http-nio-8080-exec-9]  c.w.s.s.serviceInterface.UserService : redis set kv success
